@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    @keyframes appear{
+        from{
+            opacity:0;
+            scaling: 0.5;
+        }
+        to{
+            opcacity:1;
+            scaling: 1;
+        }
+    }
+
+    .animate-appear {
+        animation: appear linear;
+        animation-timeline: view();
+    }
+}
